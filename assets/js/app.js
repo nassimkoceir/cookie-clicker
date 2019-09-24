@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let multi = 1;
 	let multiPrice = 20;
 	let autoCliker = 0;
-	let autoClikerPrice = 500;
+	let autoClikerPrice = 5;
 
 	const scoreLable = document.getElementById('score');
 
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			cookie -= autoClikerPrice;
 			autoCliker++;
 			autoClikerPrice = Math.round( autoClikerPrice*1.5 )
-			btnAutoClick.innerText = `Auto-click x${autoCliker} (${autoClikerPrice})`
+			btnAutoClick.innerText = `Auto-click x${autoCliker+1} (${autoClikerPrice})`
 		}
 	})
 
