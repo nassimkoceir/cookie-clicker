@@ -7,15 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
    const scoreLable = document.getElementById('score')
 
    document.getElementById('cookie').addEventListener('click', () => {
-      scoreLable.innerText = ++count
+      
    })
 
 
 	function autoclick(){
 		if(multiplier == true){
-			 console.log(++count);
+			scoreLable.innerText = ++count
 		}
 	}
 
-	setInterval(autoclick, 1000);
+   setInterval(autoclick, 1000);
+   
 })
