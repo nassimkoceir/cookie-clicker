@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let multi = 1;
 	let multiPrice = 20;
 	let autoCliker = 0;
-	let autoClikerPrice = 5;
+	let autoClikerPrice = 500;
 
 	const scoreLable = document.getElementById('score');
 
