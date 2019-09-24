@@ -19,8 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	setInterval(autoclick, 1000);
 
 	function displayScore(){
-		scoreLable.innerHTML = count;
+      scoreLable.innerHTML = count;
+      requestAnimationFrame(displayScore)
 	}
+   displayScore()
 
-	setInterval(displayScore, 200);
 })
