@@ -8,10 +8,11 @@ var decrement = function(){
     // décompter de 30 à 0
     for(var i=30; i> -1; i--)
     {
-        setTimeout((function(s){
+        setTimeout((function(s)
+        {
         return function(){
         decompte(s);
-        })(i), temp);
+        }((i), temp);
         // 1000 pour 1 sec
         temp += 1000;
         }
