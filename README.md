@@ -23,6 +23,11 @@ We had 2 days to work on this, from 24 to 25th of september.
 ## Where did you work on this project ?
 We were at Becode Brussels.
 
+## Materials
+![preview](https://nassimkoceir.github.io/assets/img/wireframe1.jpg)
+![preview](https://nassimkoceir.github.io/assets/img/wireframe2.jpg)
+![preview](https://nassimkoceir.github.io/assets/img/autoclicker-mobile.jpg)
+
 ## Sources
- - Paws : original work from Emmanuel Trepant
+ - Paws & Star : original work from Emmanuel Trepant
  - Cat : original work from "L'Ananas à Cheveux" for Nassim Koceir
