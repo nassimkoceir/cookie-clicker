@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 	let cookie = 0;
+	let bonus = 1;
 	let multi = 1;
 	let multiPrice = 20;
 	let autoCliker = 0;
@@ -11,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const cookieDOM = document.getElementById('cookie')
 	cookieDOM.addEventListener('click', () => {
-		cookie = cookie === 0 ? multi : cookie + multi;
+		cookie = cookie === 0 ? multi * bonus : cookie + ( multi * bonus );
 	})
 
 	function autoclick(){
-		cookie += autoCliker * multi
+		cookie += ( autoCliker *  multi ) * bonus;
 	}
 	setInterval(autoclick, 1000);
 
@@ -49,6 +50,35 @@ document.addEventListener('DOMContentLoaded', () => {
 			autoClikerPrice = Math.round( autoClikerPrice*1.5 )
 			btnAutoClick.innerText = `Auto-click x${autoCliker+1} (${autoClikerPrice})`
 		}
+	})
+
+
+	// Bonus
+	let bonusTimeout = null;
+	let bonusTimer = null;
+	let time = 30
+	const resetBonus = () => {
+		bonus = 1;
+		clearTimeout(bonusTimeout);
+		clearInterval(bonusTimer)
+
+		bonusTimeout = null;
+		console.log('bonus end');	
+	}
+
+	const decrementTime = () => {
+		if (time > 0) time--;
+	}
+
+	const bonusBtn = document.getElementById('bonus')
+	bonusBtn.addEventListener('click', () => {
+		console.log('click');		
+		if (!bonusTimeout) {
+			bonus = 3;
+			bonusTimeout = setTimeout(resetBonus, 30000);
+			bonusTimer = setInterval(decrementTime,1000)
+			console.log('bonus start');
+		} 
 	})
 
 })

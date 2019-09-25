@@ -5,7 +5,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Cookie clicker</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="shortcut icon" href="assets/img/nasseuhcat.png" />
 
    <style>
       body {
@@ -21,22 +26,58 @@
          top: 50%;
          left: 50%;
          transform: translate(-50%, -50%);
+         
+      }
+      .btn {
+         cursor: pointer;
       }
    </style>
 
 </head>
+
 <body>
 
-   <!-- cookie -->
-   <div id="cookie"></div>
+   <header>
+       <!-- score -->
+      <div class="container">
+         <div class="row">
+            <div class="col-3 text-right">
+               <a href="index.html"><img src="..."></a>
+            </div>
+            <div class="col-6 text-center">
+               <p>Score</p>
+                  <label id="score" for="score"></label>
+            </div>
+            <div class="col-3 text-left">
+                  <a href="index.html"><img src="..."></a>
+               </div>
+         </div>
+      </div>
 
-   <!-- score -->
-   <label id="score" for="score"></label>
+   </header>
 
+   <main>
+          <div id="cookie"><img src="assets/img/nasseuhcat.png" alt="Petit chat mignon"></div>
+   </main>
 
-   <button id="multiplier">Multiplier x2 (20)</button>
-   <button id="auto-click">Auto-click x1 (100)</button>
-   
+   <footer class="footer fixed-bottom">
+		 <div class="container">
+			 <div class="row text-center">
+            <div class="col-6">
+                  <div class="btn" id="multiplier">Multiplier x2 (20) </div>
+            </div>
+
+            <div class="col-6">
+                  <div class="btn" id="auto-click">Auto-click x1 (100)</div>
+            </div>
+            
+            <div class="col-6">
+                  <div class="btn" id="bonus">Bonus x3</div>
+            </div>
+         </div>
+		 </div>
+   </footer>
+
    <script src="assets/js/app.js"></script>
 </body>
 </html>
