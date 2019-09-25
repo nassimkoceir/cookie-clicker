@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	let multiPrice = 20;
 	let autoCliker = 0;
 	let autoClikerPrice = 100;
-	const random = () => Math.round(Math.random() * 20)
+	const random = () => Math.round(Math.random() * 100)
 
 	const scoreLable = document.getElementById('score');
 
 	const cookieDOM = document.getElementById('cookie')
 	cookieDOM.addEventListener('click', () => {
 		cookie = cookie === 0 ? multi * bonus : cookie + ( multi * bonus );
-		if ( random() === random() ) {
+		if ( random() === random() && !bonusActive && !bonusTimeout ) {
 			displayBonus()
 		}
 	})
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function resetBonus () {
 		bonus = 1;
 		clearTimeout(bonusTimeout);
+		timer.classList.add('hidden')
 		clearInterval(bonusTimer)
 		bonusBtn.classList.add('hidden');
 		time = 30
@@ -100,18 +101,22 @@ document.addEventListener('DOMContentLoaded', () => {
 			bonusTimeout = setTimeout(resetBonus, 30000);
 			bonusTimer = setInterval(decrementTime,1000);
 			decrementTime();
+			timer.classList.remove('hidden');
 			console.log('bonus start');
-		} 
+		}
+		if (bonusActive) {
+			bonusHidden();
+		}
 	})
 
 	// display bonus
 	let bonusActive = null;
 	function displayBonus () {
 		bonusBtn.classList.remove('hidden');
-		bonusActive = setTimeout(bonusActive, 3000)
+		bonusActive = setTimeout(bonusHidden, 3000)
 	}
 
-	function bonusActive () {
+	function bonusHidden () {
 		bonusBtn.classList.add('hidden');
 		clearTimeout(bonusActive)
 		bonusActive = null;
