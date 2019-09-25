@@ -41,6 +41,8 @@ header label {
   color: #fff;
   border-radius: 50%;
   z-index: 9998;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 #timer.hidden {
@@ -61,6 +63,7 @@ header label {
   transition: all 0.15s ease;
   border-radius: 8px;
   border: 2px solid #F0F0F0;
+  max-width: 400px;
 }
 
 #cookie img:active {
@@ -87,10 +90,20 @@ header label {
   cursor: pointer;
 }
 
+#multiplier img, #auto-click img {
+  display: block;
+}
+
 #multiplier span, #auto-click span {
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: block;
+  text-align: center;
+  margin-top: -30px;
+  padding-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 0px 6px #000000;
 }
 
 @keyframes etoile {

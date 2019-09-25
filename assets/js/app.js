@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const cookieDOM = document.getElementById('cookie')
 	cookieDOM.addEventListener('click', () => {
 		cookie = cookie === 0 ? multi * bonus : cookie + ( multi * bonus );
+		play();
 		if ( random() === random() && !bonusActive && !bonusTimeout ) {
 			displayBonus()
 		}
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			cookie -= multiPrice;
 			multi++;
 			multiPrice = Math.round(multiPrice*1.25);
-			spanMulti.innerText = `Multiplier x${multi+1} (${multiPrice})`
+			spanMulti.innerText = `x${multi+1} (${multiPrice})`
 		}
 	})
 
@@ -54,18 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
 			cookie -= autoClikerPrice;
 			autoCliker++;
 			autoClikerPrice = Math.round( autoClikerPrice*1.5 )
-			spanAutoClick.innerText = `Auto-click x${autoCliker+1} (${autoClikerPrice})`
+			spanAutoClick.innerText = `x${autoCliker+1} (${autoClikerPrice})`
 		}
 	})
 
+	// play music
 
-
-
-
-
-
-
-
+	function play() {
+		console.log('play')
+		const audio = document.getElementById('audio');
+		audio.play();
+	}
 
 	// Bonus
 	let bonusTimeout = null;
