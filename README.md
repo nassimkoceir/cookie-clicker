@@ -24,9 +24,9 @@ We had 2 days to work on this, from 24 to 25th of september.
 We were at Becode Brussels.
 
 ## Materials
-![preview](https://nassimkoceir.github.io/cookie-clicker/assets/img/wireframe1.jpg){:height="210px" width="300px"}
-![preview](https://nassimkoceir.github.io/cookie-clicker/assets/img/wireframe2.jpg){:height="210px" width="300px"}
-![preview](https://nassimkoceir.github.io/cookie-clicker/assets/img/autoclicker-mobile.jpg){:height="212px" width="159px"}
+<a href="https://nassimkoceir.github.io/cookie-clicker/assets/img/wireframe1.jpg" target="_blank"><img src="https://nassimkoceir.github.io/cookie-clicker/assets/img/th_wireframe1.jpg"></a>
+<a href="https://nassimkoceir.github.io/cookie-clicker/assets/img/wireframe2.jpg" target="_blank"><img src="https://nassimkoceir.github.io/cookie-clicker/assets/img/th_wireframe2.jpg"></a>
+<a href="https://nassimkoceir.github.io/cookie-clicker/assets/img/autoclicker-mobile.jpg" target="_blank"><img src="https://nassimkoceir.github.io/cookie-clicker/assets/img/th_autoclicker-mobile.jpg"></a>
 
 ## Sources
  - Paws & Star : original work from Emmanuel Trepant
