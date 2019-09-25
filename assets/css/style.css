@@ -84,6 +84,7 @@ header label {
 
 #bonus.hidden {
   opacity: 0;
+  display: none;
 }
 
 #multiplier, #auto-click {
