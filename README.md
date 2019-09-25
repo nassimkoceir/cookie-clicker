@@ -1,2 +1,2 @@
 # cookie-clicker
-Creation of a cookie clicker
+A team project about Javascript interactions.
