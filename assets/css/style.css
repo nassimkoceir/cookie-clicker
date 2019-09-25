@@ -5,10 +5,6 @@ body {
   background: url("../img/fond.jpg") repeat;
 }
 
-.btn {
-  cursor: pointer;
-}
-
 /* SPECIFIC */
 header {
   background: url("../img/fondscrore.jpg") repeat-x;
@@ -40,20 +36,28 @@ header label {
   width: 62px;
   height: 62px;
   margin: auto;
+  margin-top: -15px;
   text-align: center;
   color: #fff;
   border-radius: 50%;
+  z-index: 9998;
+}
+
+#timer.hidden {
+  opacity: 0;
 }
 
 #cookie {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  /*position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+  cursor: pointer;
+  z-index: 1;
 }
 
 #cookie img {
-  width: 100%;
   transition: all 0.15s ease;
   border-radius: 8px;
   border: 2px solid #F0F0F0;
@@ -61,4 +65,42 @@ header label {
 
 #cookie img:active {
   transform: scale(0.95);
+}
+
+#bonus {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 9999;
+  transform-origin: center;
+  animation-name: etoile;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#bonus.hidden {
+  opacity: 0;
+}
+
+#multiplier, #auto-click {
+  cursor: pointer;
+}
+
+#multiplier span, #auto-click span {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+@keyframes etoile {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

@@ -17,45 +17,50 @@
 
 <body>
 
+		<div id="bonus" class="hidde">
+			<img src="assets/img/etoile-ipad.png" alt="Bonus" />
+		</div>
+
    <header>
       <div class="container">
          <div class="row">
-            <div class="col-3 text-right pattes-gauche">
-               <img src="assets/img/pattes-g.png">
+            <div class="col-3 text-right pattes-gauche d-none d-sm-block">
+               <img src="assets/img/pattes-g.png" alt="pattes gauche">
             </div>
-            <div class="col-6 text-center score-block">
+            <div class="col-xs-12 col-sm-6 text-center score-block">
                <p>Nombre de chats</p>
                <label id="score" for="score"></label>
             </div>
-            <div class="col-3 text-left pattes-droite">
-              <img src="assets/img/pattes-d.png">
+            <div class="col-3 text-left pattes-droite d-none d-sm-block">
+              <img src="assets/img/pattes-d.png" alt="pattes droite">
             </div>
          </div>
       </div>
    </header>
 
    <main>
-				<div id="timer">TIME</div>
-        <div id="cookie"><img src="assets/img/chat-clic.jpg" alt="Petit chat mignon"></div>
+				<div id="timer" class="hidde"></div>
+        <div id="cookie">
+					<img src="assets/img/chat-clic.jpg" alt="Petit chat mignon" value="PLAY">
+					<audio id="audio" src="assets/img/Cat Meow-SoundBible.com-1453940411.mp3" ></audio>
+				</div>
    </main>
 
    <footer class="footer fixed-bottom">
 		 <div class="container">
-			 <div class="row text-center">
+			 <div class="row">
             <div class="col-6">
-                  <div class="btn" id="multiplier">
-                  	<img src="assets/img/multiplier.jpg" alt="Multiplier">
-                  </div>
+              <div class="text-right" id="multiplier">
+              	<img src="assets/img/multiplier.jpg" alt="Multiplier">
+								<span>x2 (20)</span>
+              </div>
             </div>
 
             <div class="col-6">
-                  <div class="btn" id="auto-click">
-										<img src="assets/img/autoclic.jpg" alt="Autoclic">
-									</div>
-            </div>
-
-            <div class="col-6">
-                  <div class="btn" id="bonus">Bonus x3</div>
+              <div class="text-left" id="auto-click">
+								<img src="assets/img/autoclic.jpg" alt="Autoclic">
+								<span>x1 (100)</span>
+							</div>
             </div>
          </div>
 		 </div>
