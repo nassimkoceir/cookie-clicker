@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const cookieDOM = document.getElementById('cookie')
 	cookieDOM.addEventListener('click', () => {
-			cookie = cookie === 0 ? multi : cookie + multi;
+		cookie = cookie === 0 ? multi : cookie + multi;
 	})
 
 	function autoclick(){
