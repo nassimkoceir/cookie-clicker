@@ -5,16 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	let multi = 1;
 	let multiPrice = 20;
 	let autoCliker = 0;
-	let autoClikerPrice = 500;
+	let autoClikerPrice = 100;
 
 	const scoreLable = document.getElementById('score');
 
-	document.getElementById('cookie').addEventListener('click', () => {
+	const cookieDOM = document.getElementById('cookie')
+	cookieDOM.addEventListener('click', () => {
 			cookie = cookie === 0 ? multi : cookie + multi;
 	})
 
 	function autoclick(){
-		cookie += autoCliker
+		cookie += autoCliker * multi
 	}
 	setInterval(autoclick, 1000);
 
