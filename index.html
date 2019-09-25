@@ -9,71 +9,53 @@
 	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="assets/css/styles.css">
+	 <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/style.min.css">
    <link rel="shortcut icon" href="assets/img/nasseuhcat.png" />
-
-   <style>
-      body {
-         height: 100vh;
-         margin: 0;
-      }
-      #cookie {
-         height: 300px;
-         width: 300px;
-         background: lightskyblue;
-
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-
-      }
-      .btn {
-         cursor: pointer;
-      }
-   </style>
 
 </head>
 
 <body>
 
    <header>
-       <!-- score -->
       <div class="container">
          <div class="row">
-            <div class="col-3 text-right">
-               <a href="index.html"><img src="..."></a>
+            <div class="col-3 text-right pattes-gauche">
+               <img src="assets/img/pattes-g.png">
             </div>
-            <div class="col-6 text-center">
-               <p>Score</p>
-                  <label id="score" for="score"></label>
+            <div class="col-6 text-center score-block">
+               <p>Nombre de chats</p>
+               <label id="score" for="score"></label>
             </div>
-            <div class="col-3 text-left">
-                  <a href="index.html"><img src="..."></a>
-               </div>
+            <div class="col-3 text-left pattes-droite">
+              <img src="assets/img/pattes-d.png">
+            </div>
          </div>
       </div>
-
    </header>
 
    <main>
-          <div id="cookie"><img src="assets/img/nasseuhcat.png" alt="Petit chat mignon"></div>
+				<div id="timer">TIME</div>
+        <div id="cookie"><img src="assets/img/chat-clic.jpg" alt="Petit chat mignon"></div>
    </main>
 
    <footer class="footer fixed-bottom">
 		 <div class="container">
 			 <div class="row text-center">
             <div class="col-6">
-                  <div class="btn" id="multiplier">Multiplier x2 (20) </div>
+                  <div class="btn" id="multiplier">
+                  	<img src="assets/img/multiplier.jpg" alt="Multiplier">
+                  </div>
             </div>
 
             <div class="col-6">
-                  <div class="btn" id="auto-click">Auto-click x1 (100)</div>
+                  <div class="btn" id="auto-click">
+										<img src="assets/img/autoclic.jpg" alt="Autoclic">
+									</div>
             </div>
 
             <div class="col-6">
                   <div class="btn" id="bonus">Bonus x3</div>
-									<div class="btn" id="timer">TIME</div>
             </div>
          </div>
 		 </div>

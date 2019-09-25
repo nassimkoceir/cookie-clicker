@@ -1,0 +1,64 @@
+/* GENERAL */
+body {
+	 height: 100vh;
+	 margin: 0;
+	 background: url("../img/fond.jpg") repeat;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+/* SPECIFIC */
+header {
+	background: url("../img/fondscrore.jpg") repeat-x;
+	color: #fff;
+
+	.score-block p {
+    font-family: 'Mansalva', cursive;
+		font-size: 3rem;
+		margin-top: 0.4rem;
+		margin-bottom: 0;
+	}
+
+	.pattes-gauche {
+		margin-top: 1rem;
+	}
+
+	.pattes-droite {
+		margin-top: 2rem;
+	}
+
+	label {
+		font-size: 2rem;
+	}
+}
+
+#timer {
+	line-height: 62px;
+	background: #D874B4;
+	width: 62px;
+	height: 62px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+}
+
+#cookie {
+	 position: absolute;
+	 top: 55%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+
+	 img {
+	 	width: 100%;
+		transition: all 0.15s ease;
+		border-radius: 8px;
+		border: 2px solid #F0F0F0;
+	 }
+
+	 img:active {
+		 transform: scale(0.95);
+	 }
+}
