@@ -1,4 +1,4 @@
-# Cat Clicker : A cat tale about clicking and cute paws (and cookie clicker)
+# Cat Clicker : A cat tale about clicking and cute paws (and cookie clicking)
 A team project about Javascript interactions.
 
 ## Team
